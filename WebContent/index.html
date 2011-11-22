@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Varkrs Lab</title>
+		<link rel=stylesheet href=./css/reset.css />
+		<link rel=stylesheet href=./css/varkrs.css />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<span class=var>Var</span><span class=krs>krs'</span> <span class=lab>Lab</span>
+			</h1>
+			<nav>
+				<a href=http://www.baidu.com target=_blank>上传</a>
+			</nav>
+		</header>
+		<section>
+			<a href="">
+				<article class="a">
+					<img src="./imgs/img1.jpg" />
+					<p>
+						邓志豪，性格不明，年龄不详，婚姻亦不知⋯⋯
+					</p>
+					<nav>
+						asdf
+					</nav>
+				</article>
+			</a>
+			<a href="">
+				<article class="b">
+					<img src="./imgs/img2.jpg" />
+					<p>
+						邓志豪，性格不明，年龄不详，婚姻亦不知⋯⋯
+					</p>
+					<nav>
+						
+					</nav>
+				</article>
+			</a>
+		</section>
+		<!-- <form action="/photowall_tomcat/photowall/users/1/tags" method="POST" enctype="multipart/form-data"> -->
+		<form action="/zhishidian/zhishidian/users/1/nodes/1" method="POST">
+			<!-- <input type="file" name="file"/> -->
+			<input type="text" name="nickname" />
+			<input type="hidden" value="-1" name="parentid" />
+			<input type="text" name="description" />
+			<input type="text" name="pub" />
+			<input type="text" name="title" />
+			<input type="submit" />
+		</form>
+		<footer>
+			Varkrs' Lab @ISS WHU 2011-2011
+		</footer>
+	</body>
+<html>

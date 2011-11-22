@@ -1,0 +1,205 @@
+/*---------------------------------------------------
+		LESS Elements 0.5
+	---------------------------------------------------
+		A set of useful LESS mixins by Dmitry Fadeyev
+		Special thanks for mixin suggestions to:
+			Kris Van Herzeele,
+			Benoit Adam,
+			Portenart Emile-Victor
+			
+		More info at: http://lesselements.com
+-----------------------------------------------------*/
+body {
+  background-color: #FFFFFF;
+  background: url("../imgs/body-bg.png") repeat;
+  width: 960px;
+  margin: 0 auto;
+}
+header {
+  height: 70px;
+  padding-top: 30px;
+}
+header h1 {
+  text-align: right;
+  width: 30%;
+  float: right;
+  font-size: 2.5em;
+}
+header span {
+  opacity: 0.6;
+  display: inline-block;
+  -webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  -moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header span:hover, header span:active, header span:focus {
+  opacity: 1.0;
+  -webkit-box-shadow: 4px 4px 8px rgba(135, 139, 144, 0.7);
+  -moz-box-shadow: 4px 4px 8px rgba(135, 139, 144, 0.7);
+  box-shadow: 4px 4px 8px rgba(135, 139, 144, 0.7);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+header .var {
+  color: #063194;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+header .krs {
+  color: #d80c2e;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+header .lab {
+  color: #a18b0f;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+header nav {
+  width: 20%;
+  float: left;
+}
+header nav a {
+  opacity: 0.8;
+  display: inline-block;
+  font-size: 0.92em;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 37px;
+  text-align: center;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border: 1px solid transparent;
+  background: #dd4b39;
+  background: -webkit-gradient(linear, left bottom, left top, #dd4b39, #d14836);
+  background: -moz-linear-gradient(center bottom, #dd4b39 0%, #d14836 100%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-text-shadow: 1px 2px 3px rgba(67, 8, 7, 0.8);
+  -moz-text-shadow: 1px 2px 3px rgba(67, 8, 7, 0.8);
+  text-shadow: 1px 2px 3px rgba(67, 8, 7, 0.8);
+}
+header nav a:hover {
+  opacity: 1.0;
+  -webkit-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  -moz-box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  box-shadow: 2px 2px 3px rgba(135, 139, 144, 0.4);
+  -webkit-text-shadow: 2px 3px 4px #430807;
+  -moz-text-shadow: 2px 3px 4px #430807;
+  text-shadow: 2px 3px 4px #430807;
+}
+section {
+  -webkit-box-shadow: 3px 4px 7px rgba(135, 139, 144, 0.5);
+  -moz-box-shadow: 3px 4px 7px rgba(135, 139, 144, 0.5);
+  box-shadow: 3px 4px 7px rgba(135, 139, 144, 0.5);
+  padding: 15px;
+  text-align: center;
+}
+section article {
+  display: inline-block;
+  padding: 10px;
+  -webkit-box-shadow: 1px 2px 2px rgba(135, 139, 144, 0.3);
+  -moz-box-shadow: 1px 2px 2px rgba(135, 139, 144, 0.3);
+  box-shadow: 1px 2px 2px rgba(135, 139, 144, 0.3);
+  width: 200px;
+  border: 1px rgba(135, 139, 144, 0.3) solid;
+  position: relative;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+section article img {
+  width: inherit;
+}
+section article p {
+  border-top: 1px #ccc solid;
+  margin-top: 3px;
+  padding-top: 5px;
+  font-size: 0.9em;
+  color: #222222;
+  background-color: #ffffff;
+}
+section article nav {
+  position: absolute;
+  top: 10px;
+  width: 0px;
+  z-index: -1;
+  padding: 10px 0px;
+  background-color: red;
+}
+section article:hover, section article:active, section article:focus {
+  -webkit-box-shadow: 5px 7px 10px rgba(135, 139, 144, 0.9);
+  -moz-box-shadow: 5px 7px 10px rgba(135, 139, 144, 0.9);
+  box-shadow: 5px 7px 10px rgba(135, 139, 144, 0.9);
+  z-index: 10;
+  opacity: 1.0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+section .a {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  transform: rotate(12deg);
+  margin: 20px -40px;
+}
+section .b {
+  -webkit-transform: rotate(23deg);
+  -moz-transform: rotate(23deg);
+  transform: rotate(23deg);
+  margin: -20px -40px;
+}
+section .c {
+  -webkit-transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  transform: rotate(-21deg);
+  margin: -20px -40px;
+}
+section .d {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  margin: -20px -40px;
+}
+section .e {
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  transform: rotate(7deg);
+  margin: -20px -40px;
+}
+section .f {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+  margin: -20px -40px;
+}
+footer {
+  padding-top: 10px;
+  text-align: center;
+  color: #666;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+footer:hover {
+  color: #333;
+}
